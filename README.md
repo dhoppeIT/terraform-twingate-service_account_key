@@ -13,7 +13,7 @@ specify the required variables and run the command `terraform init`.
 module "twingate_service_account" {
   source  = "gitlab.com/terraform-child-modules-48151/terraform-twingate-service-account/local"
   <!-- renovate: datasource=gitlab-tags depName=terraform-child-modules-48151/terraform-twingate-service_account extractVersion=^v(?<version>.*)$ -->
-  version = "1.0.0"
+  version = "1.1.0"
 
   name = "example-service_account"
 }
@@ -21,7 +21,7 @@ module "twingate_service_account" {
 module "twingate_service_account_key" {
   source  = "gitlab.com/terraform-child-modules-48151/terraform-twingate-service-account-key/local"
   <!-- renovate: datasource=gitlab-tags depName=terraform-child-modules-48151/terraform-twingate-service_account_key extractVersion=^v(?<version>.*)$ -->
-  version = "1.0.0"
+  version = "1.1.0"
 
   service_account_id = module.twingate_service_account.id
 
